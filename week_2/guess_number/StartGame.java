@@ -27,7 +27,7 @@ class GuessNumber
 		}while(num != x);
 		show();
 	}
-	void show()
+	private void show()
 	{
 		System.out.println("C:continue the game\t\tQ:quite the game");
 		while (true)
@@ -49,11 +49,11 @@ class GuessNumber
 		setCounter();
 		start();
 	}
-	void setX()
+	private void setX()
 	{
 		x = (int)((Math.random())*100+1);
 	}
-	void setCounter()
+	private void setCounter()
 	{
 		counter = 0;
 	}
